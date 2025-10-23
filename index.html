@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sri Vetri Reals - Transforming Spaces, Building Dreams</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="placeholder.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-brand">
+                <img src="images/logo.jpg" alt="Sri Vetri Reals" class="logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" style="display: block;">
+                <div class="logo logo-placeholder" style="display: none;">SVR</div>
+                <span class="brand-name">Sri Vetri Reals</span>
+            </div>
+            <div class="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#videos" class="nav-link">Videos</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section with Slideshow -->
+    <section id="home" class="hero">
+        <div class="slideshow-container">
+            <div class="slide active">
+                <img src="images/hero1.jpg" alt="Real Estate Project 1">
+                <div class="slide-overlay"></div>
+            </div>
+            <div class="slide">
+                <img src="images/hero2.jpg" alt="Real Estate Project 2">
+                <div class="slide-overlay"></div>
+            </div>
+            <div class="slide">
+                <img src="images/hero3.jpg" alt="Real Estate Project 3">
+                <div class="slide-overlay"></div>
+            </div>
+            
+            <!-- Navigation arrows -->
+            <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+            <a class="next" onclick="changeSlide(1)">&#10095;</a>
+        </div>
+        
+        <div class="hero-content">
+            <h1 class="hero-title">Transforming Spaces, Building Dreams</h1>
+            <button class="cta-button" onclick="scrollToProjects()">Explore Our Projects</button>
+        </div>
+        
+        <!-- Slide indicators -->
+        <div class="slide-indicators">
+            <span class="indicator active" onclick="currentSlide(1)"></span>
+            <span class="indicator" onclick="currentSlide(2)"></span>
+            <span class="indicator" onclick="currentSlide(3)"></span>
+        </div>
+    </section>
+
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="images/about-image.jpg" alt="Sri Vetri Reals Office" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="about-placeholder" style="display: none;">Sri Vetri Reals Office</div>
+                </div>
+                <div class="about-text">
+                    <h2>About Sri Vetri Reals</h2>
+                    
+                    <div class="about-section">
+                        <h3>Our Mission</h3>
+                        <p>We provide value driven results to our Customers, Employees, Industry and Environment.</p>
+                    </div>
+                    
+                    <div class="about-section">
+                        <h3>Vision</h3>
+                        <p>To be the most trusted and innovative real estate developer in India and maintain to provide quality living to all our customers and help their "Dreams come true".</p>
+                    </div>
+                    
+                    <div class="about-section">
+                        <h3>Values</h3>
+                        <p>To be the world's preferred real estate firm, providing the most creative and innovative services on a consistent basis, to drive meaningful value to our customer. To be the best what We do...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Gallery Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Projects</h2>
+                <p>Explore our diverse portfolio of residential and commercial developments</p>
+            </div>
+            
+            <div class="projects-grid">
+                <!-- Project cards will be populated here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Section -->
+    <section id="videos" class="videos">
+        <div class="container">
+            <div class="section-header">
+                <h2>Explore our stunning property developments</h2>
+                <p>Watch our project showcases and virtual tours</p>
+            </div>
+            
+            <div class="video-grid">
+                <div class="video-card">
+                    <h3>Siddhar Nagar</h3>
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/wt1QPy_p0K0?rel=0&modestbranding=1&showinfo=0" frameborder="0" allowfullscreen allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+                    </div>
+                </div>
+                
+                <div class="video-card">
+                    <h3>Satellite City</h3>
+                    <p>Chennai Part-2 ECR Township Anupuram</p>
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/PPkVXY_9irk?rel=0&modestbranding=1&showinfo=0" frameborder="0" allowfullscreen allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+                    </div>
+                </div>
+                
+                <div class="video-card">
+                    <h3>VSR Nagar</h3>
+                    <p>Chengalpattu Collector Office Opposite & NH 45</p>
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/_e5S-fZDId4?rel=0&modestbranding=1&showinfo=0" frameborder="0" allowfullscreen allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2>Contact Us</h2>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+91 9367936768</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>info@srivetrireals.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Chennai, Tamil Nadu, India</span>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="https://wa.me/919367936768" class="whatsapp-btn" target="_blank">
+                            <i class="fab fa-whatsapp"></i>
+                            WhatsApp
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31165.772233333334!2d79.98999999999999!3d12.683333333333334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52ce6c8b7c7c7c7%3A0x7c7c7c7c7c7c7c7c!2sChengalpattu%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1695000000000!5m2!1sen!2sin" width="100%" height="300" style="border:0; border-radius: 15px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <!-- <iframe src="https://maps.app.goo.gl/Xj2tFGuc5ADcE9Nv9" width="100%" height="300" style="border:0; border-radius: 15px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+                </div>
+            </div>
+            
+            <div class="social-media">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/srivetrirealsassociate" target="_blank">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="https://www.instagram.com/svr24associates" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.youtube.com/@SVRASSOCIATES-v2w" target="_blank">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+                
+                <div class="newsletter">
+                    <h3>Stay Updated</h3>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Sri Vetri Reals. All rights reserved. | Transforming Spaces, Building Dreams</p>
+        </div>
+    </footer>
+
+    <!-- Project Modal -->
+    <div id="projectModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div class="modal-body">
+                <div class="modal-image">
+                    <img id="modalImage" src="" alt="" style="display: none; width: 100%; height: 100%; object-fit: cover; border-radius: 10px;">
+                </div>
+                <div class="modal-info">
+                    <h3 id="modalTitle"></h3>
+                    <div class="modal-details">
+                        <p><strong>Location:</strong> <span id="modalLocation"></span></p>
+                        <p><strong>Rate:</strong> <span id="modalRate"></span></p>
+                        <p><strong>Contact:</strong> <span id="modalContact"></span></p>
+                    </div>
+                    <a id="modalMapLink" href="#" target="_blank" class="map-link">
+                        <i class="fas fa-map-marker-alt"></i> View on Map
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
